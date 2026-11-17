@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basalt Montage — Video Editing Studio, Nairobi</title>
+<meta name="description" content="Basalt Montage is a specialist video editing studio in Nairobi, Kenya. Thoughtful editing and compelling storytelling for YouTubers, property developers and businesses.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#111411">
+
+<!-- CONFIG: replace YOUR-DOMAIN.com with your real domain in the four places below
+     (canonical, og:url, og:image, twitter:image) once the domain is connected. -->
+<link rel="canonical" href="https://YOUR-DOMAIN.com/">
+
+<!-- Social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Basalt Montage">
+<meta property="og:locale" content="en_KE">
+<meta property="og:title" content="Basalt Montage — Video Editing Studio">
+<meta property="og:description" content="Thoughtful Editing. Compelling Storytelling. A specialist video editing studio in Nairobi, Kenya.">
+<meta property="og:url" content="https://YOUR-DOMAIN.com/">
+<meta property="og:image" content="https://YOUR-DOMAIN.com/assets/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Basalt Montage BM monogram with the words Video Editing Studio and the tagline Thoughtful Editing. Compelling Storytelling.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Basalt Montage — Video Editing Studio">
+<meta name="twitter:description" content="Thoughtful Editing. Compelling Storytelling. A specialist video editing studio in Nairobi, Kenya.">
+<meta name="twitter:image" content="https://YOUR-DOMAIN.com/assets/og-image.png">
+<meta name="twitter:image:alt" content="Basalt Montage BM monogram with the words Video Editing Studio and the tagline Thoughtful Editing. Compelling Storytelling.">
+
+<!-- Icons -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="favicon-16.png" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{
+  --charcoal:#111411;
+  --charcoal-2:#181c18;
+  --ivory:#E9E5DE;
+  --gold:#C6A36A;
+  --silver:#C8C8C5;
+  --line:rgba(233,229,222,.14);
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Jost',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --gutter:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{background:var(--charcoal);color:var(--ivory);font-family:var(--sans);font-weight:300;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,iframe,svg{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit}
+.skip{position:absolute;left:-999px;top:8px;background:var(--gold);color:var(--charcoal);padding:10px 16px;z-index:100;text-decoration:none}
+.skip:focus{left:8px}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- Header ---------- */
+header{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:16px var(--gutter);transition:background .4s,border-color .4s;border-bottom:1px solid transparent}
+header.scrolled,header.menu-open{background:rgba(17,20,17,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-color:var(--line)}
+.logo{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ivory)}
+.logo svg{width:52px;height:31px;flex:none}
+.logo-text{font-size:11px;letter-spacing:.42em;text-transform:uppercase}
+nav ul{display:flex;align-items:center;gap:34px;list-style:none}
+nav a{font-size:12px;letter-spacing:.26em;text-transform:uppercase;text-decoration:none;color:var(--silver);transition:color .3s;padding:6px 0;border-bottom:1px solid transparent}
+nav a:hover{color:var(--gold)}
+nav a[aria-current="true"]{color:var(--ivory);border-bottom-color:var(--gold)}
+nav a.nav-cta{border:1px solid var(--gold);color:var(--ivory);padding:10px 20px}
+nav a.nav-cta:hover{background:var(--gold);color:var(--charcoal)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--ivory);font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:0 16px;min-height:44px;cursor:pointer}
+
+/* ---------- Layout ---------- */
+section{padding:clamp(72px,11vw,150px) var(--gutter)}
+.wrap{max-width:1280px;margin:0 auto}
+.eyebrow{font-size:12px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);margin-bottom:22px;display:flex;align-items:center;gap:16px}
+.eyebrow::after{content:"";height:1px;width:56px;background:var(--gold);opacity:.6}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spacing:-.01em}
+h2{font-size:clamp(36px,5vw,64px);margin-bottom:28px;text-wrap:balance}
+h3{font-size:26px}
+p{color:var(--silver)}
+em{color:var(--gold);font-style:italic}
+
+/* ---------- Buttons ---------- */
+.btns{display:flex;flex-wrap:wrap;gap:16px;margin-top:36px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:14px 32px;font-size:12px;letter-spacing:.26em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold);cursor:pointer;transition:all .35s;text-align:center}
+.btn-primary{background:var(--gold);color:var(--charcoal);font-weight:500}
+.btn-primary:hover{background:transparent;color:var(--gold)}
+.btn-ghost{background:transparent;color:var(--ivory)}
+.btn-ghost:hover{background:var(--gold);color:var(--charcoal)}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+
+/* ---------- Hero ---------- */
+.hero{padding-top:clamp(108px,11vw,140px);padding-bottom:clamp(64px,8vw,110px)}
+.hero h1{font-size:clamp(44px,6.7vw,100px);line-height:1.02;max-width:12.4em;text-wrap:balance}
+.hero-sub{display:flex;justify-content:space-between;align-items:flex-end;gap:28px 48px;flex-wrap:wrap;margin-top:clamp(24px,3vw,38px)}
+.hero .lead{font-size:clamp(17px,1.5vw,20px);max-width:470px}
+.hero .btns{margin-top:0}
+
+/* cinematic frame */
+.cine{margin-top:clamp(44px,6vw,84px)}
+.cine-bar{display:flex;justify-content:space-between;align-items:center;padding:0 2px 12px;font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--silver)}
+.cine-bar .tc{font-variant-numeric:tabular-nums;letter-spacing:.2em;color:var(--gold)}
+.screen{position:relative;aspect-ratio:21/9;background:#0b0d0b;border:1px solid var(--line);overflow:hidden;isolation:isolate}
+.scene{position:absolute;inset:0;z-index:0;background:
+  radial-gradient(55% 95% at 80% 12%,rgba(198,163,106,.20),transparent 62%),
+  radial-gradient(45% 75% at 10% 100%,rgba(233,229,222,.07),transparent 62%),
+  linear-gradient(180deg,#181c18 0%,#0c0e0c 100%)}
+.scene::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 110% at 50% 50%,transparent 52%,rgba(0,0,0,.6) 100%)}
+.grain{position:absolute;inset:0;opacity:.09;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.scene .wm{position:absolute;right:5%;top:50%;transform:translateY(-50%);height:78%;width:auto;aspect-ratio:849/500;color:var(--ivory);opacity:.075}
+.brk{position:absolute;width:22px;height:22px;border:0 solid rgba(233,229,222,.38);z-index:1}
+.brk.tl{left:4%;top:7%;border-width:1px 0 0 1px}
+.brk.tr{right:4%;top:7%;border-width:1px 1px 0 0}
+.brk.bl{left:4%;bottom:7%;border-width:0 0 1px 1px}
+.brk.br{right:4%;bottom:7%;border-width:0 1px 1px 0}
+.screen-copy{position:absolute;left:6%;bottom:12%;z-index:2;max-width:46%}
+.screen-copy .k{font-size:11px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.screen-copy .t{font-family:var(--serif);font-style:italic;font-size:clamp(22px,3.2vw,44px);line-height:1.12;color:var(--ivory)}
+.screen-copy .s{margin-top:12px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--silver);opacity:.8}
+.screen iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000;z-index:3}
+.playbtn{position:absolute;inset:0;border:0;background:#000;cursor:pointer;color:var(--ivory);z-index:3}
+.playbtn img{width:100%;height:100%;object-fit:cover;opacity:.8;transition:opacity .4s,transform .8s}
+.playbtn:hover img{opacity:1;transform:scale(1.02)}
+.playbtn .tri{position:absolute;left:50%;top:50%;width:76px;height:76px;margin:-38px 0 0 -38px;border:1px solid var(--gold);border-radius:50%;background:rgba(17,20,17,.55)}
+.playbtn .tri::after{content:"";position:absolute;left:31px;top:23px;border-left:19px solid var(--gold);border-top:15px solid transparent;border-bottom:15px solid transparent}
+
+/* timeline */
+.timeline{margin-top:14px;display:grid;grid-template-columns:34px minmax(0,1fr);column-gap:12px;font-size:10px;letter-spacing:.2em;color:rgba(200,200,197,.6)}
+.tl-labels{display:grid;grid-template-rows:20px repeat(4,26px);row-gap:6px}
+.tl-labels span{display:flex;align-items:center}
+.lanes{position:relative;min-width:0;display:grid;grid-template-rows:20px repeat(4,26px);row-gap:6px}
+.ruler{position:relative;border-bottom:1px solid var(--line);background:repeating-linear-gradient(90deg,rgba(233,229,222,.28) 0 1px,transparent 1px 2.5%) bottom/100% 5px no-repeat}
+.ruler b{position:absolute;top:0;font-weight:300;font-variant-numeric:tabular-nums;transform:translateX(-50%)}
+.lane{position:relative;min-width:0;overflow:hidden}
+.lane.v1,.lane.v2{overflow:visible}
+.lane i{position:absolute;top:0;bottom:0;left:var(--l);width:var(--w);background:rgba(233,229,222,.075);border:1px solid rgba(233,229,222,.2);border-radius:2px}
+.lane i.sel{background:rgba(198,163,106,.14);border-color:rgba(198,163,106,.7)}
+.lane.v2 i{background:rgba(200,200,197,.045);border-style:dashed;border-color:rgba(233,229,222,.16)}
+.wave{display:flex;align-items:center;gap:2px;height:100%;overflow:hidden}
+.wave s{flex:0 0 2px;background:rgba(233,229,222,.32);border-radius:1px}
+.lane.a2 .wave s,.wave.dim s{background:rgba(200,200,197,.17)}
+.playhead{position:absolute;top:0;bottom:0;left:30%;width:1px;background:var(--gold);z-index:4;pointer-events:none}
+.playhead::before{content:"";position:absolute;top:0;left:-5px;border-left:5.5px solid transparent;border-right:5.5px solid transparent;border-top:8px solid var(--gold)}
+
+/* ---------- Work ---------- */
+.work-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(48px,6vw,88px) clamp(20px,2.6vw,40px);margin-top:56px;align-items:start}
+.work-grid article:nth-child(1){grid-column:1/8}
+.work-grid article:nth-child(2){grid-column:8/13;margin-top:clamp(0px,8vw,120px)}
+.work-grid article:nth-child(3){grid-column:1/6;margin-top:clamp(0px,5vw,72px)}
+.work-grid article:nth-child(4){grid-column:6/13}
+.work-grid article:nth-child(5){grid-column:1/7}
+.work-grid article:nth-child(6){grid-column:7/13;margin-top:clamp(0px,8vw,120px)}
+.frame{position:relative;aspect-ratio:16/9;background:#0b0d0b;border:1px solid var(--line);overflow:hidden;isolation:isolate;transition:border-color .5s}
+.frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
+.frame.is-video{background:#000}
+.slot-bg{position:absolute;inset:0;background:
+  radial-gradient(60% 90% at var(--lx,78%) var(--ly,10%),rgba(198,163,106,var(--la,.15)),transparent 62%),
+  radial-gradient(50% 70% at var(--rx,10%) 100%,rgba(233,229,222,.06),transparent 62%),
+  linear-gradient(180deg,#181c18,#0c0e0c)}
+.slot-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 110% at 50% 50%,transparent 55%,rgba(0,0,0,.55))}
+.slot .grain{opacity:.08}
+.slot .brk{width:16px;height:16px}
+.slot .brk.tl{left:5%;top:7%}.slot .brk.tr{right:5%;top:7%}.slot .brk.bl{left:5%;bottom:7%}.slot .brk.br{right:5%;bottom:7%}
+.badge{position:absolute;left:8%;top:15%;z-index:2;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(198,163,106,.5);padding:5px 12px 5px 14px;line-height:1.4}
+.num{position:absolute;left:7.5%;bottom:22%;z-index:1;font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(84px,11vw,168px);line-height:.8;color:rgba(233,229,222,.1);transition:color .6s,transform .8s}
+.slot-note{position:absolute;right:8%;top:15%;z-index:2;text-align:right;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--silver);opacity:.75;max-width:40%;line-height:1.7}
+.strip{position:absolute;left:8%;right:8%;bottom:15%;z-index:2;display:flex;gap:3px;height:9px}
+.strip i{flex:var(--f,1);background:rgba(233,229,222,.12);border:1px solid rgba(233,229,222,.2);border-radius:1px}
+.strip i.sel{background:rgba(198,163,106,.2);border-color:rgba(198,163,106,.65)}
+.slot:hover{border-color:rgba(198,163,106,.45)}
+.slot:hover .num{color:rgba(233,229,222,.17);transform:translateX(6px)}
+.meta{display:flex;justify-content:space-between;gap:16px;margin:22px 0 10px;font-size:11px;letter-spacing:.28em;text-transform:uppercase}
+.meta .c{color:var(--gold)}
+.meta .i{color:var(--silver);text-align:right;opacity:.8}
+.work-grid h3{margin-bottom:10px}
+.work-grid h3.ph-t{color:rgba(233,229,222,.72);font-style:italic}
+.work-grid .role{margin-top:14px;font-size:14px;border-top:1px solid var(--line);padding-top:12px}
+.work-grid .role b{font-weight:500;color:var(--ivory);letter-spacing:.04em}
+.work-note{margin-top:56px;font-size:14px;max-width:640px;border-left:1px solid var(--gold);padding-left:20px}
+
+/* ---------- Services ---------- */
+.services{background:var(--charcoal-2)}
+.svc-list{margin-top:48px;border-top:1px solid var(--line)}
+.svc{display:grid;grid-template-columns:70px 1fr 1.4fr;gap:24px;padding:34px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.svc .n{font-family:var(--serif);font-size:22px;color:var(--gold)}
+.support{margin-top:64px}
+.support ul{list-style:none;display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.support li{border:1px solid var(--line);padding:10px 20px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--silver)}
+
+/* ---------- About ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,110px);align-items:start}
+.pillars{display:grid;gap:30px}
+.pillars div{border-left:1px solid var(--gold);padding-left:24px}
+.pillars h3{font-size:24px;margin-bottom:6px}
+.pillars p{font-size:15px}
+
+/* ---------- Contact ---------- */
+.contact{background:var(--charcoal-2)}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(40px,7vw,110px)}
+.contact-info p{margin-bottom:10px}
+.contact-info a{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(198,163,106,.4);word-break:break-word}
+form{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field.full{grid-column:1/-1}
+label{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--silver)}
+label .opt{letter-spacing:.14em;opacity:.65;text-transform:none}
+input,select,textarea{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(233,229,222,.3);color:var(--ivory);font:inherit;font-size:16px;padding:12px 0;min-height:46px;border-radius:0;-webkit-appearance:none;appearance:none}
+select{background-image:linear-gradient(45deg,transparent 50%,var(--gold) 50%),linear-gradient(135deg,var(--gold) 50%,transparent 50%);background-position:calc(100% - 12px) 55%,calc(100% - 6px) 55%;background-size:6px 6px;background-repeat:no-repeat;padding-right:28px}
+select option{background:var(--charcoal);color:var(--ivory)}
+textarea{min-height:130px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+input[aria-invalid="true"],select[aria-invalid="true"],textarea[aria-invalid="true"]{border-color:#d98c7a}
+.err{min-height:18px;font-size:13px;color:#e0a090;letter-spacing:.02em}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.form-mode{grid-column:1/-1;font-size:14px;border-left:1px solid var(--gold);padding-left:16px}
+.form-note{grid-column:1/-1;font-size:15px;min-height:22px;color:var(--gold)}
+.fallback{grid-column:1/-1;border:1px solid var(--line);padding:20px 22px;display:none;gap:14px;flex-direction:column}
+.fallback.show{display:flex}
+.fallback p{font-size:14px}
+.fallback .btns{margin-top:4px}
+.fallback .btn{min-height:44px;padding:10px 22px}
+
+/* ---------- Footer ---------- */
+footer{padding:56px var(--gutter) 40px;border-top:1px solid var(--line)}
+.foot{max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:32px}
+.foot svg{width:250px;height:167px;color:var(--ivory)}
+.foot .meta-f{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--silver);line-height:2.2;text-align:right}
+.foot .meta-f a{text-decoration:none}
+.foot .meta-f a:hover{color:var(--gold)}
+
+/* ---------- Reveal ---------- */
+html.js .reveal{opacity:0;transform:translateY(24px);transition:opacity 1s ease,transform 1s ease}
+html.js .reveal.in{opacity:1;transform:none}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1000px){
+  .hero .lead{max-width:540px}
+  .svc{grid-template-columns:56px 1fr}
+  .svc p{grid-column:2}
+  .about-grid,.contact-grid{grid-template-columns:1fr}
+}
+@media (max-width:900px){
+  .menu-btn{display:block}
+  nav{position:absolute;top:100%;left:0;right:0;background:var(--charcoal);border-bottom:1px solid var(--line);box-shadow:0 28px 40px rgba(0,0,0,.55);display:none;padding:10px var(--gutter) 28px}
+  nav.open{display:block}
+  nav ul{flex-direction:column;align-items:stretch;gap:0}
+  nav li{border-bottom:1px solid var(--line)}
+  nav a{display:block;padding:18px 0;font-size:13px}
+  nav a[aria-current="true"]{border-bottom-color:transparent;color:var(--gold)}
+  nav li:last-child{border-bottom:0;margin-top:18px}
+  nav a.nav-cta{text-align:center;padding:16px 20px}
+  .work-grid{grid-template-columns:repeat(2,1fr)}
+  .work-grid article:nth-child(n){grid-column:auto;margin-top:0}
+  .work-grid article:nth-child(2n){margin-top:40px}
+  .logo-text{display:none}
+  .slot-note{display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .work-grid{grid-template-columns:1fr;margin-top:40px;gap:52px}
+  .work-grid article:nth-child(2n){margin-top:0}
+  .screen{aspect-ratio:16/9}
+  .screen-copy{left:7%;bottom:16%;max-width:70%}
+  .screen-copy .s{display:none}
+  .scene .wm{height:52%;right:6%}
+  .timeline{grid-template-columns:26px minmax(0,1fr);column-gap:8px}
+  .tl-labels,.lanes{grid-template-rows:18px 22px 22px}
+  .lane.v2,.tl-labels .l-v2,.lane.a2,.tl-labels .l-a2{display:none}
+  .btns{flex-direction:column;width:100%}
+  .btns .btn{width:100%}
+  .hero-sub{margin-top:22px}
+  form{grid-template-columns:1fr;gap:22px}
+  .svc{grid-template-columns:40px 1fr;gap:16px;padding:26px 0}
+  .meta{flex-direction:column;gap:6px}
+  .meta .i{text-align:left}
+  .foot{flex-direction:column;align-items:flex-start}
+  .foot .meta-f{text-align:left}
+  .foot svg{width:210px;height:140px}
+  .eyebrow{letter-spacing:.26em;gap:12px}
+  .eyebrow::after{width:28px;flex:none}
+  .slot-note{display:none}
+  .num{font-size:96px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  html.js .reveal{opacity:1;transform:none;transition:none}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- BM monogram, built from the editorial serif. Defined once, reused below. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+<defs><mask id="bmk-m" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="700"><rect width="1000" height="700" fill="#fff"/><path d="M358.24 274.72Q387.04 277.28 410.08 288.16Q439.52 302.24 455.84 326.56Q472.16 350.88 472.16 382.88Q472.16 416.8 454.56 444Q436.96 471.2 406.56 486.88Q376.16 502.56 338.4 502.56Q319.2 502.56 292.96 500.64Q266.72 498.72 244.96 498.72Q223.2 498.72 203.36 499.36Q183.52 500 167.52 500Q165.6 500 165.6 496.16Q165.6 492.32 167.52 492.32Q188.64 492.32 200.16 489.12Q211.68 485.92 215.84 476.32Q220 466.72 220 448.16V151.84Q220 133.28 216.16 124Q212.32 114.72 201.12 111.2Q189.92 107.68 168.16 107.68Q166.88 107.68 166.88 103.84Q166.88 100 168.16 100Q184.16 100 203.68 100.96Q223.2 101.92 244.96 101.92Q262.24 101.92 283.36 100Q304.48 98.08 321.12 98.08Q359.52 98.08 384.16 108.64Q408.8 119.2 420.96 138.08Q433.12 156.96 433.12 181.92Q433.12 217.76 406.24 244.64Q387.04 263.84 358.24 274.72ZM328.16 489.76Q374.88 489.76 396.32 465.76Q417.76 441.76 417.76 398.24Q417.76 350.88 391.52 320.48Q365.28 290.08 314.72 290.08Q301.92 289.44 285.28 290.08Q278.24 290.08 270.56 290.72V448.16Q270.56 462.88 274.72 472.16Q278.88 481.44 291.36 485.6Q303.84 489.76 328.16 489.76ZM308.96 108.96Q294.88 108.96 286.24 111.84Q277.6 114.72 274.08 124Q270.56 133.28 270.56 153.12V274.72Q277.6 274.72 283.36 274.72Q296.8 275.36 298.72 275.36Q343.52 275.36 363.36 249.76Q383.2 224.16 383.2 187.04Q383.2 164 375.2 146.4Q367.2 128.8 351.2 118.88Q335.2 108.96 308.96 108.96Z" fill="#000" stroke="#000" stroke-width="12" stroke-linejoin="round"/></mask>
+<mask id="bmk-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="700"><rect width="1000" height="700" fill="#fff"/></mask><mask id="bml-m" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="700"><rect width="1000" height="700" fill="#fff"/><path d="M358.24 274.72Q387.04 277.28 410.08 288.16Q439.52 302.24 455.84 326.56Q472.16 350.88 472.16 382.88Q472.16 416.8 454.56 444Q436.96 471.2 406.56 486.88Q376.16 502.56 338.4 502.56Q319.2 502.56 292.96 500.64Q266.72 498.72 244.96 498.72Q223.2 498.72 203.36 499.36Q183.52 500 167.52 500Q165.6 500 165.6 496.16Q165.6 492.32 167.52 492.32Q188.64 492.32 200.16 489.12Q211.68 485.92 215.84 476.32Q220 466.72 220 448.16V151.84Q220 133.28 216.16 124Q212.32 114.72 201.12 111.2Q189.92 107.68 168.16 107.68Q166.88 107.68 166.88 103.84Q166.88 100 168.16 100Q184.16 100 203.68 100.96Q223.2 101.92 244.96 101.92Q262.24 101.92 283.36 100Q304.48 98.08 321.12 98.08Q359.52 98.08 384.16 108.64Q408.8 119.2 420.96 138.08Q433.12 156.96 433.12 181.92Q433.12 217.76 406.24 244.64Q387.04 263.84 358.24 274.72ZM328.16 489.76Q374.88 489.76 396.32 465.76Q417.76 441.76 417.76 398.24Q417.76 350.88 391.52 320.48Q365.28 290.08 314.72 290.08Q301.92 289.44 285.28 290.08Q278.24 290.08 270.56 290.72V448.16Q270.56 462.88 274.72 472.16Q278.88 481.44 291.36 485.6Q303.84 489.76 328.16 489.76ZM308.96 108.96Q294.88 108.96 286.24 111.84Q277.6 114.72 274.08 124Q270.56 133.28 270.56 153.12V274.72Q277.6 274.72 283.36 274.72Q296.8 275.36 298.72 275.36Q343.52 275.36 363.36 249.76Q383.2 224.16 383.2 187.04Q383.2 164 375.2 146.4Q367.2 128.8 351.2 118.88Q335.2 108.96 308.96 108.96Z" fill="#000" stroke="#000" stroke-width="12" stroke-linejoin="round"/></mask>
+<mask id="bml-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="700"><rect width="1000" height="700" fill="#fff"/><rect x="105.6" y="269.0" width="922.6" height="62" rx="10" fill="#000"/></mask></defs>
+<symbol id="bm-mark" viewBox="48.7 50 902.6 500"><g fill="currentColor" transform="translate(-66.9 0)"><g mask="url(#bmk-cut)"><path mask="url(#bmk-m)" d="M518.96 427.04 524.72 139.68Q503.6 107.68 469.68 107.68Q468.4 107.68 468.4 103.84Q468.4 100 469.68 100Q481.2 100 493.68 100.64Q506.16 101.28 515.12 101.28Q527.28 101.28 537.2 100.64Q547.12 100 552.24 100Q561.2 100 566.32 106.08Q571.44 112.16 581.68 133.28L723.76 421.92L857.52 116Q860.72 108.32 865.52 104.16Q870.32 100 876.72 100Q881.2 100 887.92 100.64Q894.64 101.28 903.6 101.28Q921.52 101.28 933.68 100.64Q945.84 100 958.64 100Q959.92 100 959.92 103.84Q959.92 107.68 958.64 107.68Q927.92 107.68 913.84 117.6Q899.76 127.52 900.4 153.76L913.84 448.16Q915.12 466.72 918.96 476.32Q922.8 485.92 933.68 489.12Q944.56 492.32 966.96 492.32Q968.24 492.32 968.24 496.16Q968.24 500 966.96 500Q950.96 500 931.12 499.36Q911.28 498.72 888.88 498.72Q867.76 498.72 849.2 499.36Q830.64 500 815.92 500Q814 500 814 496.16Q814 492.32 815.92 492.32Q847.28 492.32 856.24 484Q865.2 475.68 863.28 448.16L851.12 166.56L709.68 495.52Q709.04 498.08 704.88 498.08Q700.72 498.08 699.44 495.52L540.08 169.12L534.96 427.04Q534.32 460.32 546.8 476.32Q559.28 492.32 588.72 492.32Q590.64 492.32 590.64 496.16Q590.64 500 588.72 500Q574.64 500 559.92 499.36Q545.2 498.72 526.64 498.72Q509.36 498.72 494 499.36Q478.64 500 465.2 500Q463.92 500 463.92 496.16Q463.92 492.32 465.2 492.32Q492.08 492.32 505.2 476.32Q518.32 460.32 518.96 427.04Z"/><path d="M358.24 274.72Q387.04 277.28 410.08 288.16Q439.52 302.24 455.84 326.56Q472.16 350.88 472.16 382.88Q472.16 416.8 454.56 444Q436.96 471.2 406.56 486.88Q376.16 502.56 338.4 502.56Q319.2 502.56 292.96 500.64Q266.72 498.72 244.96 498.72Q223.2 498.72 203.36 499.36Q183.52 500 167.52 500Q165.6 500 165.6 496.16Q165.6 492.32 167.52 492.32Q188.64 492.32 200.16 489.12Q211.68 485.92 215.84 476.32Q220 466.72 220 448.16V151.84Q220 133.28 216.16 124Q212.32 114.72 201.12 111.2Q189.92 107.68 168.16 107.68Q166.88 107.68 166.88 103.84Q166.88 100 168.16 100Q184.16 100 203.68 100.96Q223.2 101.92 244.96 101.92Q262.24 101.92 283.36 100Q304.48 98.08 321.12 98.08Q359.52 98.08 384.16 108.64Q408.8 119.2 420.96 138.08Q433.12 156.96 433.12 181.92Q433.12 217.76 406.24 244.64Q387.04 263.84 358.24 274.72ZM328.16 489.76Q374.88 489.76 396.32 465.76Q417.76 441.76 417.76 398.24Q417.76 350.88 391.52 320.48Q365.28 290.08 314.72 290.08Q301.92 289.44 285.28 290.08Q278.24 290.08 270.56 290.72V448.16Q270.56 462.88 274.72 472.16Q278.88 481.44 291.36 485.6Q303.84 489.76 328.16 489.76ZM308.96 108.96Q294.88 108.96 286.24 111.84Q277.6 114.72 274.08 124Q270.56 133.28 270.56 153.12V274.72Q277.6 274.72 283.36 274.72Q296.8 275.36 298.72 275.36Q343.52 275.36 363.36 249.76Q383.2 224.16 383.2 187.04Q383.2 164 375.2 146.4Q367.2 128.8 351.2 118.88Q335.2 108.96 308.96 108.96Z"/></g></g></symbol>
+<symbol id="bm-lockup" viewBox="80 20 840 560"><g fill="currentColor" transform="translate(-66.9 0)"><g mask="url(#bml-cut)"><path mask="url(#bml-m)" d="M518.96 427.04 524.72 139.68Q503.6 107.68 469.68 107.68Q468.4 107.68 468.4 103.84Q468.4 100 469.68 100Q481.2 100 493.68 100.64Q506.16 101.28 515.12 101.28Q527.28 101.28 537.2 100.64Q547.12 100 552.24 100Q561.2 100 566.32 106.08Q571.44 112.16 581.68 133.28L723.76 421.92L857.52 116Q860.72 108.32 865.52 104.16Q870.32 100 876.72 100Q881.2 100 887.92 100.64Q894.64 101.28 903.6 101.28Q921.52 101.28 933.68 100.64Q945.84 100 958.64 100Q959.92 100 959.92 103.84Q959.92 107.68 958.64 107.68Q927.92 107.68 913.84 117.6Q899.76 127.52 900.4 153.76L913.84 448.16Q915.12 466.72 918.96 476.32Q922.8 485.92 933.68 489.12Q944.56 492.32 966.96 492.32Q968.24 492.32 968.24 496.16Q968.24 500 966.96 500Q950.96 500 931.12 499.36Q911.28 498.72 888.88 498.72Q867.76 498.72 849.2 499.36Q830.64 500 815.92 500Q814 500 814 496.16Q814 492.32 815.92 492.32Q847.28 492.32 856.24 484Q865.2 475.68 863.28 448.16L851.12 166.56L709.68 495.52Q709.04 498.08 704.88 498.08Q700.72 498.08 699.44 495.52L540.08 169.12L534.96 427.04Q534.32 460.32 546.8 476.32Q559.28 492.32 588.72 492.32Q590.64 492.32 590.64 496.16Q590.64 500 588.72 500Q574.64 500 559.92 499.36Q545.2 498.72 526.64 498.72Q509.36 498.72 494 499.36Q478.64 500 465.2 500Q463.92 500 463.92 496.16Q463.92 492.32 465.2 492.32Q492.08 492.32 505.2 476.32Q518.32 460.32 518.96 427.04Z"/><path d="M358.24 274.72Q387.04 277.28 410.08 288.16Q439.52 302.24 455.84 326.56Q472.16 350.88 472.16 382.88Q472.16 416.8 454.56 444Q436.96 471.2 406.56 486.88Q376.16 502.56 338.4 502.56Q319.2 502.56 292.96 500.64Q266.72 498.72 244.96 498.72Q223.2 498.72 203.36 499.36Q183.52 500 167.52 500Q165.6 500 165.6 496.16Q165.6 492.32 167.52 492.32Q188.64 492.32 200.16 489.12Q211.68 485.92 215.84 476.32Q220 466.72 220 448.16V151.84Q220 133.28 216.16 124Q212.32 114.72 201.12 111.2Q189.92 107.68 168.16 107.68Q166.88 107.68 166.88 103.84Q166.88 100 168.16 100Q184.16 100 203.68 100.96Q223.2 101.92 244.96 101.92Q262.24 101.92 283.36 100Q304.48 98.08 321.12 98.08Q359.52 98.08 384.16 108.64Q408.8 119.2 420.96 138.08Q433.12 156.96 433.12 181.92Q433.12 217.76 406.24 244.64Q387.04 263.84 358.24 274.72ZM328.16 489.76Q374.88 489.76 396.32 465.76Q417.76 441.76 417.76 398.24Q417.76 350.88 391.52 320.48Q365.28 290.08 314.72 290.08Q301.92 289.44 285.28 290.08Q278.24 290.08 270.56 290.72V448.16Q270.56 462.88 274.72 472.16Q278.88 481.44 291.36 485.6Q303.84 489.76 328.16 489.76ZM308.96 108.96Q294.88 108.96 286.24 111.84Q277.6 114.72 274.08 124Q270.56 133.28 270.56 153.12V274.72Q277.6 274.72 283.36 274.72Q296.8 275.36 298.72 275.36Q343.52 275.36 363.36 249.76Q383.2 224.16 383.2 187.04Q383.2 164 375.2 146.4Q367.2 128.8 351.2 118.88Q335.2 108.96 308.96 108.96Z"/></g><path d="M264.61 299.01Q264.89 298.92 265.17 298.82Q266.59 298.26 267.4 297.18Q268.2 296.09 268.2 294.58Q268.2 292.72 267.4 291.52Q266.59 290.33 265.15 289.74Q263.71 289.15 261.76 289.15H256.18V310.85H262.07Q264.17 310.85 265.83 310.15Q267.49 309.46 268.47 308.04Q269.44 306.63 269.44 304.5Q269.44 303.01 268.89 301.92Q268.33 300.84 267.32 300.14Q266.31 299.44 264.98 299.1Q264.79 299.04 264.61 299.01ZM258.81 300.22H262.07Q263.12 300.22 263.99 300.48Q264.86 300.74 265.49 301.27Q266.13 301.8 266.47 302.57Q266.81 303.35 266.81 304.34Q266.81 305.67 266.21 306.6Q265.6 307.53 264.53 308.03Q263.46 308.53 262.07 308.53H258.81ZM258.81 297.92V291.48H261.76Q263.4 291.48 264.48 292.33Q265.57 293.18 265.57 294.73Q265.57 295.75 265.07 296.47Q264.58 297.18 263.71 297.55Q262.84 297.92 261.76 297.92ZM313.6 304.34 316.35 310.85H319.3L309.22 288.06L299.15 310.85H302.09L304.85 304.34ZM309.22 294.05 312.54 301.86H305.91ZM350.74 304.28 348.63 305.7Q349.35 307.13 350.48 308.39Q351.61 309.64 353.11 310.4Q354.62 311.16 356.38 311.16Q357.68 311.16 358.88 310.73Q360.07 310.29 361.02 309.49Q361.96 308.68 362.51 307.53Q363.05 306.39 363.05 304.96Q363.05 303.47 362.52 302.4Q361.99 301.33 361.17 300.57Q360.35 299.81 359.39 299.32Q358.43 298.82 357.56 298.51Q355.67 297.86 354.57 297.19Q353.47 296.53 353 295.77Q352.54 295.01 352.54 294.11Q352.54 293.06 353.34 292.2Q354.15 291.35 355.92 291.35Q357.19 291.35 358.07 291.85Q358.96 292.34 359.58 293.12Q360.2 293.89 360.6 294.7L362.86 293.4Q362.33 292.25 361.4 291.21Q360.47 290.17 359.16 289.51Q357.84 288.84 356.07 288.84Q354.24 288.84 352.82 289.57Q351.39 290.3 350.59 291.57Q349.78 292.84 349.78 294.45Q349.78 295.94 350.35 296.96Q350.93 297.99 351.83 298.68Q352.72 299.38 353.72 299.83Q354.71 300.28 355.51 300.56Q356.75 300.99 357.86 301.53Q358.96 302.08 359.64 302.95Q360.32 303.81 360.32 305.27Q360.32 306.76 359.27 307.72Q358.21 308.68 356.48 308.68Q355.17 308.68 354.15 308.12Q353.13 307.56 352.31 306.57Q351.48 305.58 350.74 304.28ZM407.04 304.34 409.8 310.85H412.75L402.67 288.06L392.6 310.85H395.54L398.3 304.34ZM402.67 294.05 405.99 301.86H399.36ZM443.38 289.15V310.85H454.54V308.37H446.02V289.15ZM483.16 291.63H488.74V310.85H491.38V291.63H496.96V289.15H483.16ZM568.05 296.19 575.12 308.84 582.19 296.19 583.8 310.85H586.44L583.8 288.06L575.12 303.78L566.44 288.06L563.81 310.85H566.44ZM619.71 300Q619.71 297.55 620.78 295.63Q621.85 293.71 623.71 292.59Q625.57 291.48 627.92 291.48Q630.31 291.48 632.15 292.59Q634 293.71 635.07 295.63Q636.14 297.55 636.14 300Q636.14 302.45 635.07 304.37Q634 306.29 632.15 307.41Q630.31 308.53 627.92 308.53Q625.57 308.53 623.71 307.41Q621.85 306.29 620.78 304.37Q619.71 302.45 619.71 300ZM616.92 300Q616.92 302.36 617.74 304.4Q618.56 306.45 620.05 307.95Q621.54 309.46 623.55 310.31Q625.57 311.16 627.92 311.16Q630.31 311.16 632.31 310.31Q634.31 309.46 635.8 307.95Q637.28 306.45 638.11 304.4Q638.93 302.36 638.93 300Q638.93 297.61 638.11 295.58Q637.28 293.55 635.8 292.05Q634.31 290.55 632.31 289.69Q630.31 288.84 627.92 288.84Q625.57 288.84 623.55 289.69Q621.54 290.55 620.05 292.05Q618.56 293.55 617.74 295.58Q616.92 297.61 616.92 300ZM687.08 289.15V305.3L670.65 288.06V310.85H673.28V294.7L689.71 311.94V289.15ZM720.5 291.63H726.08V310.85H728.72V291.63H734.3V289.15H720.5ZM777.21 304.34 779.97 310.85H782.91L772.84 288.06L762.76 310.85H765.71L768.47 304.34ZM772.84 294.05 776.15 301.86H769.52ZM823.62 302.33H830.85Q830.57 303.6 829.96 304.71Q829.36 305.83 828.43 306.7Q827.5 307.56 826.21 308.04Q824.92 308.53 823.31 308.53Q821.02 308.53 819.16 307.44Q817.3 306.36 816.2 304.43Q815.1 302.51 815.1 300Q815.1 297.46 816.2 295.55Q817.3 293.65 819.16 292.56Q821.02 291.48 823.31 291.48Q825.79 291.48 827.62 292.45Q829.45 293.43 830.47 295.16L832.33 293.46Q831.4 291.94 830.06 290.92Q828.71 289.89 827.02 289.37Q825.33 288.84 823.31 288.84Q820.96 288.84 818.94 289.66Q816.93 290.48 815.44 291.99Q813.95 293.49 813.13 295.54Q812.31 297.58 812.31 300Q812.31 302.42 813.13 304.46Q813.95 306.51 815.44 308.01Q816.93 309.52 818.94 310.34Q820.96 311.16 823.31 311.16Q825.79 311.16 827.73 310.25Q829.67 309.33 831 307.75Q832.33 306.17 833.02 304.14Q833.7 302.11 833.7 299.85H823.62ZM865.57 289.15V310.85H877.97V308.37H868.21V300.31H877.35V297.83H868.21V291.63H877.97V289.15Z"/></g></symbol>
+</svg>
+
+<header id="top">
+  <a class="logo" href="#top" aria-label="Basalt Montage — home">
+    <svg aria-hidden="true" focusable="false"><use href="#bm-mark" width="100%" height="100%"/></svg>
+    <span class="logo-text">Basalt Montage</span>
+  </a>
+  <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Main">
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="nav-cta">Start a project</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- HOME -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <p class="eyebrow">Video Editing Studio · Nairobi</p>
+    <h1 id="hero-title">Your footage deserves a <em>better</em> story.</h1>
+    <div class="hero-sub">
+      <p class="lead">We transform raw footage into compelling visual experiences through thoughtful editing and storytelling.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="#work">Explore Our Work</a>
+        <a class="btn btn-ghost" href="#contact">Start a Project</a>
+      </div>
+    </div>
+
+    <figure class="cine reveal" aria-label="Showreel">
+      <div class="cine-bar"><span>Showreel</span><span class="tc" id="tc" aria-hidden="true">00:00:00:00</span></div>
+      <div class="screen" id="showreel" data-title="Basalt Montage showreel">
+        <div class="scene" aria-hidden="true">
+          <div class="grain"></div>
+          <svg class="wm" focusable="false"><use href="#bm-mark" width="100%" height="100%"/></svg>
+          <span class="brk tl"></span><span class="brk tr"></span><span class="brk bl"></span><span class="brk br"></span>
+        </div>
+        <div class="screen-copy" id="reelCopy">
+          <p class="k">Showreel</p>
+          <p class="t">A selection of our edits will play here.</p>
+          <p class="s">Coming soon</p>
+        </div>
+      </div>
+      <div class="timeline" aria-hidden="true">
+        <div class="tl-labels"><span></span><span class="l-v2">V2</span><span>V1</span><span class="l-a1">A1</span><span class="l-a2">A2</span></div>
+        <div class="lanes" id="lanes">
+          <div class="ruler"><b style="left:0%;transform:none">0:00</b><b style="left:25%">0:12</b><b style="left:50%">0:24</b><b style="left:75%">0:36</b><b style="left:100%;transform:translateX(-100%)">0:48</b></div>
+          <div class="lane v2"><i style="--l:9%;--w:13%"></i><i style="--l:44%;--w:9%"></i><i style="--l:73%;--w:15%"></i></div>
+          <div class="lane v1"><i style="--l:0%;--w:17%"></i><i style="--l:17.6%;--w:11%"></i><i class="sel" style="--l:29.2%;--w:21%"></i><i style="--l:50.8%;--w:9%"></i><i style="--l:60.4%;--w:19%"></i><i style="--l:80%;--w:20%"></i></div>
+          <div class="lane a1"><div class="wave" id="wave1"></div></div>
+          <div class="lane a2"><div class="wave dim" id="wave2"></div></div>
+          <div class="playhead" id="playhead"></div>
+        </div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" aria-labelledby="work-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">Selected Work</p>
+    <h2 id="work-title" class="reveal">Edits we are proud of.</h2>
+    <div class="work-grid" id="workGrid"></div>
+    <p class="work-note reveal">Six project slots are reserved for finished client work. Each will show the video, the client or industry, and exactly what we edited, once it is supplied and cleared for display.</p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services" aria-labelledby="svc-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">Services</p>
+    <h2 id="svc-title" class="reveal">Editing, done with care.</h2>
+    <div class="svc-list">
+      <div class="svc reveal"><span class="n">01</span><h3>Long-form YouTube Editing</h3><p>Pacing, structure and polish for creators who want viewers to stay until the end.</p></div>
+      <div class="svc reveal"><span class="n">02</span><h3>Corporate Video Editing</h3><p>Clear, professional videos for businesses and organisations, from company profiles to training and internal communication.</p></div>
+      <div class="svc reveal"><span class="n">03</span><h3>Real Estate &amp; Property Showcase Editing</h3><p>Refined edits that present developments and properties with clarity and atmosphere.</p></div>
+      <div class="svc reveal"><span class="n">04</span><h3>Promotional &amp; Project Video Editing</h3><p>Focused edits that explain a product, project or offer and move the viewer to act.</p></div>
+    </div>
+    <div class="support reveal">
+      <p class="eyebrow">Supporting capabilities</p>
+      <ul>
+        <li>Colour correction &amp; grading</li>
+        <li>Audio enhancement</li>
+        <li>Sound design</li>
+        <li>Titles &amp; motion graphics</li>
+        <li>Storytelling &amp; pacing</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" aria-labelledby="about-title">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <p class="eyebrow">About</p>
+      <h2 id="about-title">A specialist editing studio in Nairobi.</h2>
+      <p>Basalt Montage turns client-supplied footage into polished, engaging and professionally finished videos. We do one thing, editing, and we give it our full attention.</p>
+      <p style="margin-top:18px">You bring the footage. We shape it into a story that holds an audience.</p>
+    </div>
+    <div class="pillars reveal">
+      <div><h3>Thoughtful editing</h3><p>Every cut serves the story, the pace and the viewer.</p></div>
+      <div><h3>Visual storytelling</h3><p>Structure, rhythm, sound and colour working together.</p></div>
+      <div><h3>Attention to detail</h3><p>The small decisions that separate a finished video from a rough one.</p></div>
+      <div><h3>Reliable collaboration</h3><p>Clear communication, honest timelines and revisions handled with care.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact" aria-labelledby="contact-title">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-title">Start a project.</h2>
+      <p>Tell us about your footage and what you want the finished video to do. We will reply with next steps and a quotation.</p>
+      <p id="emailLine" style="margin-top:24px" hidden>Email: <a id="contactEmail" href="#"></a></p>
+      <noscript><p style="margin-top:24px">Please enable JavaScript to see our contact details and use the enquiry form.</p></noscript>
+      <p>Based in Nairobi, Kenya</p>
+    </div>
+    <form id="enquiry" class="reveal" novalidate>
+      <p class="form-mode" id="formMode"></p>
+      <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" aria-required="true" aria-describedby="e-name"><span class="err" id="e-name" aria-live="polite"></span></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" aria-required="true" aria-describedby="e-email"><span class="err" id="e-email" aria-live="polite"></span></div>
+      <div class="field"><label for="f-org">Business or organisation <span class="opt">(optional)</span></label><input id="f-org" name="organisation" type="text" autocomplete="organization"></div>
+      <div class="field"><label for="f-type">Project type</label>
+        <select id="f-type" name="project_type" aria-required="true" aria-describedby="e-type">
+          <option value="">Select…</option>
+          <option>Long-form YouTube editing</option>
+          <option>Corporate video editing</option>
+          <option>Real estate / property showcase</option>
+          <option>Promotional / project video</option>
+          <option>Something else</option>
+        </select><span class="err" id="e-type" aria-live="polite"></span></div>
+      <div class="field"><label for="f-length">Approximate video length <span class="opt">(optional)</span></label><input id="f-length" name="video_length" type="text" placeholder="e.g. 10 minutes"></div>
+      <div class="field"><label for="f-budget">Budget range <span class="opt">(optional)</span></label><input id="f-budget" name="budget" type="text" placeholder="e.g. KES 15,000"></div>
+      <div class="field full"><label for="f-desc">Project description</label><textarea id="f-desc" name="description" aria-required="true" aria-describedby="e-desc"></textarea><span class="err" id="e-desc" aria-live="polite"></span></div>
+      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="field full"><button class="btn btn-primary" id="submitBtn" type="submit">Request a Quotation</button></div>
+      <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      <div class="fallback" id="fallback">
+        <p>If your email app did not open, send the same enquiry another way:</p>
+        <div class="btns">
+          <a class="btn btn-ghost" id="gmailLink" href="#" target="_blank" rel="noopener">Open in Gmail</a>
+          <button class="btn btn-ghost" id="copyBtn" type="button">Copy enquiry</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="foot">
+    <svg role="img" aria-label="Basalt Montage" focusable="false"><use href="#bm-lockup" width="100%" height="100%"/></svg>
+    <div class="meta-f">
+      <div>Thoughtful Editing. Compelling Storytelling.</div>
+      <div>Video Editing Studio · Nairobi, Kenya</div>
+      <div>© <span id="yr"></span> Basalt Montage · <a href="#top">Back to top</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   SITE SETTINGS — edit this block only
+   ===================================================================== */
+const SITE_CONFIG = {
+  // CONFIG: the studio email that receives enquiries. Shown on the page and
+  // used by the enquiry form. Leave "" to hide it and disable the form.
+  CONTACT_EMAIL: "basaltmontagekenya@gmail.com",
+
+  // CONFIG: a real form-handling URL (e.g. a free Formspree form:
+  // "https://formspree.io/f/xxxxxxx"). While this is "", the form opens the
+  // visitor's own email app instead, and says so on the page.
+  FORM_ENDPOINT: "",
+
+  // CONFIG: YouTube video ID for the showreel (the part after v= in the link).
+  // Leave "" to show the "coming soon" frame.
+  SHOWREEL_YOUTUBE_ID: ""
+};
+
+// The six portfolio slots. Leave a field "" to keep its placeholder text.
+// Set youtube to a video ID only for work you are cleared to show publicly.
+// Never add a client name, result or statistic you cannot back up.
+const PROJECTS = [
+  {category:"Long-form YouTube",       title:"", industry:"", description:"", contribution:"", youtube:""},
+  {category:"Corporate",               title:"", industry:"", description:"", contribution:"", youtube:""},
+  {category:"Real Estate & Property",  title:"", industry:"", description:"", contribution:"", youtube:""},
+  {category:"Promotional",             title:"", industry:"", description:"", contribution:"", youtube:""},
+  {category:"Long-form YouTube",       title:"", industry:"", description:"", contribution:"", youtube:""},
+  {category:"Corporate",               title:"", industry:"", description:"", contribution:"", youtube:""}
+];
+/* ===================================================================== */
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* seeded random so the decorative patterns are stable */
+function rng(seed){ return function(){ seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+
+/* ---------- video: thumbnail + play, then a privacy-friendly embed ---------- */
+function mountVideo(frame, id, title){
+  if(!id) return false;
+  const safe = encodeURIComponent(id);
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'playbtn';
+  btn.setAttribute('aria-label', 'Play video: ' + title);
+  const img = new Image();
+  img.alt = ''; img.decoding = 'async';
+  img.src = 'https://i.ytimg.com/vi/' + safe + '/maxresdefault.jpg';
+  img.onerror = () => { img.onerror = null; img.src = 'https://i.ytimg.com/vi/' + safe + '/hqdefault.jpg'; };
+  const tri = document.createElement('span'); tri.className = 'tri';
+  btn.append(img, tri);
+  btn.addEventListener('click', () => {
+    const f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + safe + '?autoplay=1&rel=0';
+    f.title = title;
+    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    f.allowFullscreen = true;
+    f.loading = 'lazy';
+    btn.replaceWith(f);
+    f.focus();
+  });
+  frame.querySelectorAll('.scene,.screen-copy,.slot-bg,.grain,.brk,.badge,.num,.slot-note,.strip').forEach(n => n.remove());
+  frame.classList.add('is-video');
+  frame.appendChild(btn);
+  return true;
+}
+
+/* ---------- showreel ---------- */
+const reel = $('showreel');
+if(SITE_CONFIG.SHOWREEL_YOUTUBE_ID){
+  mountVideo(reel, SITE_CONFIG.SHOWREEL_YOUTUBE_ID, reel.dataset.title);
+}
+
+/* ---------- portfolio ---------- */
+const grid = $('workGrid');
+const looks = [ {lx:'78%',ly:'8%',la:.17,rx:'8%'}, {lx:'22%',ly:'12%',la:.14,rx:'90%'}, {lx:'60%',ly:'0%',la:.16,rx:'20%'}, {lx:'88%',ly:'30%',la:.15,rx:'15%'}, {lx:'35%',ly:'4%',la:.15,rx:'85%'}, {lx:'70%',ly:'20%',la:.17,rx:'5%'} ];
+PROJECTS.forEach((p, i) => {
+  const n = String(i + 1).padStart(2, '0');
+  const isLive = !!p.youtube;
+  const a = document.createElement('article');
+  a.className = 'reveal';
+  const L = looks[i % looks.length];
+  const r = rng(101 + i * 37);
+  let strip = '';
+  const count = 7 + Math.floor(r() * 3), selAt = 1 + Math.floor(r() * (count - 2));
+  for(let k = 0; k < count; k++) strip += '<i' + (k === selAt ? ' class="sel"' : '') + ' style="--f:' + (0.6 + r() * 2.2).toFixed(2) + '"></i>';
+  a.innerHTML =
+    '<div class="frame slot" style="--lx:' + L.lx + ';--ly:' + L.ly + ';--la:' + L.la + ';--rx:' + L.rx + '">' +
+      '<div class="slot-bg" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>' +
+      '<span class="brk tl"></span><span class="brk tr"></span><span class="brk bl"></span><span class="brk br"></span>' +
+      '<span class="badge">Placeholder · Project ' + n + '</span>' +
+      '<span class="slot-note">Project material<br>to be added</span>' +
+      '<span class="num" aria-hidden="true">' + n + '</span>' +
+      '<div class="strip" aria-hidden="true">' + strip + '</div>' +
+    '</div>' +
+    '<div class="meta"><span class="c">' + esc(p.category) + '</span><span class="i">' + esc(p.industry || 'Client or industry to be confirmed') + '</span></div>' +
+    '<h3' + (p.title ? '' : ' class="ph-t"') + '>' + esc(p.title || 'Project title to be added') + '</h3>' +
+    '<p>' + esc(p.description || 'A short description of the project and the story it tells will appear here.') + '</p>' +
+    '<p class="role"><b>Editing contribution:</b> ' + esc(p.contribution || 'To be confirmed with the project.') + '</p>';
+  grid.appendChild(a);
+  if(isLive){ mountVideo(a.querySelector('.frame'), p.youtube, p.title || ('Project ' + n)); }
+});
+
+/* ---------- timeline: waveform bars, playhead and timecode ---------- */
+function waveform(el, seed, base){
+  const r = rng(seed), n = Math.max(30, Math.floor(el.clientWidth / 4)); let h = '';
+  for(let i = 0; i < n; i++){
+    const env = 0.35 + 0.65 * Math.abs(Math.sin(i / 11 + seed)) * (0.55 + 0.45 * r());
+    h += '<s style="height:' + Math.max(10, Math.min(100, base * env * (0.5 + r()))).toFixed(0) + '%"></s>';
+  }
+  el.innerHTML = h;
+}
+function drawWaves(){ waveform($('wave1'), 7, 95); waveform($('wave2'), 19, 60); }
+drawWaves();
+let wT = 0, wW = $('wave1').clientWidth;
+window.addEventListener('resize', () => { clearTimeout(wT); wT = setTimeout(() => { if($('wave1').clientWidth !== wW){ wW = $('wave1').clientWidth; drawWaves(); } }, 150); });
+
+const playhead = $('playhead'), tc = $('tc'), cine = document.querySelector('.cine');
+const DURATION = 48, FPS = 24;
+function setTime(t){
+  const pct = 3 + 94 * (t / DURATION);
+  playhead.style.left = pct + '%';
+  const f = Math.floor(t * FPS), ff = f % FPS, s = Math.floor(t) % 60, m = Math.floor(t / 60) % 60;
+  tc.textContent = '00:' + String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0') + ':' + String(ff).padStart(2,'0');
+}
+if(reduceMotion){ setTime(14); }
+else {
+  let raf = 0, last = 0, t = 0, visible = true;
+  const tick = now => { if(!last) last = now; t = (t + (now - last) / 1000) % DURATION; last = now; setTime(t); raf = visible ? requestAnimationFrame(tick) : 0; };
+  setTime(0); raf = requestAnimationFrame(tick);
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(es => { visible = es[0].isIntersecting; if(visible && !raf){ last = 0; raf = requestAnimationFrame(tick); } }).observe(cine);
+  }
+}
+
+/* ---------- header, menu, active section ---------- */
+const header = document.querySelector('header');
+const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+const menuBtn = $('menuBtn'), nav = $('nav');
+function setMenu(open){
+  nav.classList.toggle('open', open);
+  header.classList.toggle('menu-open', open);
+  menuBtn.setAttribute('aria-expanded', String(open));
+  menuBtn.textContent = open ? 'Close' : 'Menu';
+}
+menuBtn.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
+nav.addEventListener('click', e => { if(e.target.closest('a')) setMenu(false); });
+document.addEventListener('keydown', e => { if(e.key === 'Escape' && nav.classList.contains('open')){ setMenu(false); menuBtn.focus(); } });
+document.addEventListener('click', e => { if(nav.classList.contains('open') && !e.target.closest('nav') && !e.target.closest('#menuBtn')) setMenu(false); });
+window.matchMedia('(min-width: 901px)').addEventListener('change', e => { if(e.matches) setMenu(false); });
+
+const links = [...document.querySelectorAll('nav a[href^="#"]')].filter(a => !a.classList.contains('nav-cta'));
+if('IntersectionObserver' in window){
+  const map = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+  const so = new IntersectionObserver(es => es.forEach(e => {
+    const a = map.get(e.target.id); if(!a) return;
+    if(e.isIntersecting){ links.forEach(l => l.removeAttribute('aria-current')); a.setAttribute('aria-current','true'); }
+    else a.removeAttribute('aria-current');
+  }), {rootMargin:'-45% 0px -50% 0px'});
+  map.forEach((a, id) => { const s = $(id); if(s) so.observe(s); });
+}
+
+/* ---------- reveal on scroll ---------- */
+const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.1}) : null;
+document.querySelectorAll('.reveal').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+$('yr').textContent = new Date().getFullYear();
+
+/* ---------- contact details + enquiry form ---------- */
+const EMAIL = (SITE_CONFIG.CONTACT_EMAIL || '').trim();
+const ENDPOINT = (SITE_CONFIG.FORM_ENDPOINT || '').trim();
+const form = $('enquiry'), note = $('formNote'), modeEl = $('formMode'), submitBtn = $('submitBtn'), fallback = $('fallback');
+const field = n => form.elements.namedItem(n);     // avoids clashes with native form properties (form.name etc.)
+
+if(EMAIL){ $('contactEmail').href = 'mailto:' + EMAIL; $('contactEmail').textContent = EMAIL; $('emailLine').hidden = false; }
+
+if(ENDPOINT){
+  modeEl.hidden = true;
+} else if(EMAIL){
+  modeEl.textContent = 'How this form works: pressing the button opens your email app with your enquiry already written. Nothing is sent until you press send there.';
+} else {
+  modeEl.textContent = 'The enquiry form is not connected yet, so it cannot send anything. Please check back soon.';
+  submitBtn.disabled = true;
+}
+
+const rules = {
+  name:         v => v.trim() ? '' : 'Please enter your name.',
+  email:        (v, el) => !v.trim() ? 'Please enter your email address.' : (el.validity.valid ? '' : 'Please enter a valid email address.'),
+  project_type: v => v ? '' : 'Please choose a project type.',
+  description:  v => v.trim() ? '' : 'Please describe your project in a sentence or two.'
+};
+const errId = { name:'e-name', email:'e-email', project_type:'e-type', description:'e-desc' };
+function validate(){
+  let first = null;
+  Object.keys(rules).forEach(n => {
+    const el = field(n), msg = rules[n](el.value, el);
+    $(errId[n]).textContent = msg;
+    el.setAttribute('aria-invalid', msg ? 'true' : 'false');
+    if(msg && !first) first = el;
+  });
+  return first;
+}
+Object.keys(rules).forEach(n => field(n).addEventListener('input', () => {
+  const el = field(n), msg = rules[n](el.value, el);
+  if(el.getAttribute('aria-invalid') === 'true'){ $(errId[n]).textContent = msg; el.setAttribute('aria-invalid', msg ? 'true' : 'false'); }
+}));
+
+function enquiryText(data){
+  const lines = [
+    ['Name', data.name], ['Email', data.email], ['Business or organisation', data.organisation],
+    ['Project type', data.project_type], ['Approximate video length', data.video_length], ['Budget range', data.budget]
+  ].filter(x => x[1] && String(x[1]).trim()).map(x => x[0] + ': ' + String(x[1]).trim());
+  return lines.join('\n') + '\n\nProject description:\n' + String(data.description).trim();
+}
+function collect(){
+  const o = {};
+  ['name','email','organisation','project_type','video_length','budget','description'].forEach(n => { o[n] = field(n).value; });
+  return o;
+}
+
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  note.textContent = ''; fallback.classList.remove('show');
+  if(field('_gotcha').value) return;                        // spam trap
+  const bad = validate();
+  if(bad){ note.textContent = 'Please check the highlighted fields.'; bad.focus(); return; }
+  const data = collect();
+
+  if(ENDPOINT){
+    submitBtn.disabled = true; note.textContent = 'Sending…';
+    try{
+      const r = await fetch(ENDPOINT, {method:'POST', headers:{'Accept':'application/json','Content-Type':'application/json'}, body:JSON.stringify(data)});
+      if(!r.ok) throw new Error('bad status');
+      form.reset(); note.textContent = 'Thank you. Your enquiry has been sent and we will reply by email.';
+    }catch(_){
+      note.textContent = 'Something went wrong and your enquiry was not sent.' + (EMAIL ? ' Please email ' + EMAIL + ' directly.' : ' Please try again shortly.');
+    }
+    submitBtn.disabled = false;
+    return;
+  }
+
+  if(!EMAIL) return;
+  const subject = 'Project enquiry: ' + data.project_type, body = enquiryText(data);
+  const a = document.createElement('a');
+  a.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  document.body.appendChild(a); a.click(); a.remove();
+  $('gmailLink').href = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(EMAIL) + '&su=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  $('copyBtn').dataset.text = 'To: ' + EMAIL + '\nSubject: ' + subject + '\n\n' + body;
+  fallback.classList.add('show');
+  note.textContent = 'Your email app should open with your enquiry ready to send. This website has not sent anything yet.';
+});
+
+$('copyBtn').addEventListener('click', async e => {
+  const txt = e.currentTarget.dataset.text || '';
+  try{ await navigator.clipboard.writeText(txt); note.textContent = 'Enquiry copied. Paste it into an email to ' + EMAIL + '.'; }
+  catch(_){
+    const ta = document.createElement('textarea'); ta.value = txt; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    let ok = false; try{ ok = document.execCommand('copy'); }catch(__){}
+    ta.remove();
+    note.textContent = ok ? 'Enquiry copied. Paste it into an email to ' + EMAIL + '.' : 'Copying was blocked. Please write to ' + EMAIL + ' directly.';
+  }
+});
+</script>
+</body>
+</html>
