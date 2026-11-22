@@ -19,16 +19,16 @@
 <meta property="og:title" content="Basalt Montage — Video Editing Studio">
 <meta property="og:description" content="Thoughtful Editing. Compelling Storytelling. A specialist video editing studio in Nairobi, Kenya.">
 <meta property="og:url" content="https://molegrumghl-creator.github.io/basaltmontage/">
-<meta property="og:image" content="https://molegrumghl-creator.github.io/basaltmontage/assets/og-image.png">
-<meta property="og:image:type" content="image/png">
+<meta property="og:image" content="https://molegrumghl-creator.github.io/basaltmontage/assets/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The Basalt Montage BM monogram logo in ivory on a dark background">
+<meta property="og:image:alt" content="The Basalt Montage BM monogram and tagline carved into dark stone">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Basalt Montage — Video Editing Studio">
 <meta name="twitter:description" content="Thoughtful Editing. Compelling Storytelling. A specialist video editing studio in Nairobi, Kenya.">
-<meta name="twitter:image" content="https://molegrumghl-creator.github.io/basaltmontage/assets/og-image.png">
-<meta name="twitter:image:alt" content="The Basalt Montage BM monogram logo in ivory on a dark background">
+<meta name="twitter:image" content="https://molegrumghl-creator.github.io/basaltmontage/assets/og-image.jpg">
+<meta name="twitter:image:alt" content="The Basalt Montage BM monogram and tagline carved into dark stone">
 
 <!-- Icons -->
 <link rel="icon" href="favicon.ico?v=2" sizes="48x48">
@@ -194,11 +194,11 @@ em{color:var(--gold);font-style:italic}
 .own{font-size:14px;line-height:1.6;max-width:640px;color:var(--silver);border-left:1px solid var(--gold);padding-left:16px}
 .yt{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--ivory);text-decoration:none;border-bottom:1px solid var(--gold);transition:color .3s}
 .yt:hover{color:var(--gold)}
-.case-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,3vw,48px);margin-top:clamp(36px,5vw,64px);align-items:start;width:100%}
+.case-body{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);margin-top:clamp(36px,5vw,64px);align-items:start}
 .case .meta{justify-content:flex-start;flex-wrap:wrap;gap:6px 22px;margin:0 0 18px}
 .case .meta .i{text-align:left}
 .case h3{font-size:clamp(30px,4.2vw,54px);line-height:1.08;margin-bottom:22px;text-wrap:balance}
-.case .desc{font-size:clamp(17px,1.5vw,20px);max-width:none}
+.case .desc{font-size:clamp(17px,1.5vw,20px);max-width:560px}
 .facts{margin-top:32px;display:grid;grid-template-columns:auto 1fr;gap:12px 32px;padding-top:22px;border-top:1px solid var(--line);font-size:15px}
 .facts dt{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--silver);opacity:.85;padding-top:3px}
 .facts dd{color:var(--ivory)}
@@ -375,8 +375,8 @@ html.js .reveal.in{opacity:1;transform:none}
         </div>
         <div class="screen-copy" id="reelCopy">
           <p class="k">Showreel</p>
-          <p class="t">A curated reel featuring selected moments from our project films.</p>
-          <p class="s">Showreel in production</p>
+          <p class="t">A selection of our edits will play here.</p>
+          <p class="s">Coming soon</p>
         </div>
       </div>
       <div class="timeline" aria-hidden="true">
@@ -400,6 +400,7 @@ html.js .reveal.in{opacity:1;transform:none}
     <p class="eyebrow reveal">Selected Work</p>
     <h2 id="work-title" class="reveal">Edits we are proud of.</h2>
     <div class="work-grid" id="workGrid"></div>
+    <p class="work-note reveal">Five more project slots are reserved for upcoming work. Each will show the video, the sector, what was done, and who owns the footage, once it is supplied and cleared for display.</p>
   </div>
 </section>
 
@@ -519,7 +520,7 @@ const SITE_CONFIG = {
   SHOWREEL_YOUTUBE_ID: ""
 };
 
-// Add only completed projects that are ready to display.
+// The six portfolio slots. Leave a field "" to keep its placeholder text.
 // Set youtube to a video ID only for work you are cleared to show publicly.
 // Never add a client name, result or statistic you cannot back up.
 const PROJECTS = [
@@ -532,24 +533,11 @@ const PROJECTS = [
     facts:[["Subject","Two commercial greenhouses"],["Size","16×30"],["Coverage","Full build, Part 1"]],
     ownership:"Original project commissioned by and owned by AquaHub Kenya. Displayed in this portfolio with permission.",
     youtube:"Vw7Mc0tbk2o" },
-  { featured:true,
-    category:"Project Showcase · Agriculture",
-    title:"How to Build an 8×30 Greenhouse for Capsicum in Kenya | Step-by-Step (Ruai)",
-    industry:"Agriculture & Greenhouse Technology",
-    description:"A step-by-step visual documentation of the construction of an 8×30 greenhouse for capsicum production in Ruai, Kenya. The video takes viewers through the different stages of construction, showing the process and the development of the completed greenhouse.",
-    contributionList:["Filming and on-location camera work","Video editing and storytelling","Final video publishing"],
-    facts:[["Structure","8×30 greenhouse"],["Crop","Capsicum"],["Location","Ruai, Kenya"]],
-    ownership:"Filmed, edited and published by the editor.",
-    youtube:"daC_AJP9L8A" },
-  { featured:true,
-    category:"Project Documentary · Agriculture",
-    title:"How We Built This Specialized Shade House and Greenhouse for ELCCON in Wundanyi + Project Launch",
-    industry:"Agriculture & Infrastructure",
-    description:"A project film documenting the construction of a specialized shade house and greenhouse for ELCCON in Wundanyi, followed by the project launch. The edit brings together construction footage, project details and launch-day moments to tell the story of the completed work.",
-    contributionList:["Video editing and story structure","Footage selection and sequencing","Final video assembly and presentation"],
-    facts:[["Project","Specialized shade house and greenhouse"],["Location","Wundanyi, Kenya"],["Coverage","Construction and project launch"]],
-    ownership:"Edited by the editor using footage filmed by others.",
-    youtube:"6Ambdyv7Tfg" }
+  {category:"Corporate",               title:"", industry:"", description:"", contribution:"", youtube:""},
+  {category:"Real Estate & Property",  title:"", industry:"", description:"", contribution:"", youtube:""},
+  {category:"Promotional",             title:"", industry:"", description:"", contribution:"", youtube:""},
+  {category:"Long-form YouTube",       title:"", industry:"", description:"", contribution:"", youtube:""},
+  {category:"Corporate",               title:"", industry:"", description:"", contribution:"", youtube:""}
 ];
 /* ===================================================================== */
 
