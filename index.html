@@ -154,13 +154,7 @@ em{color:var(--gold);font-style:italic}
 /* ---------- Work ---------- */
 .work-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(48px,6vw,88px) clamp(20px,2.6vw,40px);margin-top:56px;align-items:start}
 .work-grid article.featured{grid-column:1/-1}
-.work-grid article:nth-child(2){grid-column:1/5}
-.work-grid article:nth-child(3){grid-column:5/9;margin-top:clamp(0px,4vw,56px)}
-.work-grid article:nth-child(4){grid-column:9/13;margin-top:clamp(0px,8vw,112px)}
-.work-grid article:nth-child(5){grid-column:1/7;margin-top:clamp(0px,2vw,24px)}
-.work-grid article:nth-child(6){grid-column:7/13;margin-top:clamp(0px,7vw,96px)}
-.work-grid article:nth-child(n+2):nth-child(-n+4) .slot-note{display:none}
-.work-grid article:nth-child(n+2):nth-child(-n+4) .num{font-size:clamp(72px,8vw,120px)}
+.work-grid article:nth-child(n+2){grid-column:span 6;margin-top:0}
 .frame{position:relative;aspect-ratio:16/9;background:#0b0d0b;border:1px solid var(--line);overflow:hidden;isolation:isolate;transition:border-color .5s}
 .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
 .frame.is-video{background:#000}
@@ -400,7 +394,6 @@ html.js .reveal.in{opacity:1;transform:none}
     <p class="eyebrow reveal">Selected Work</p>
     <h2 id="work-title" class="reveal">Edits we are proud of.</h2>
     <div class="work-grid" id="workGrid"></div>
-    <p class="work-note reveal">Five more project slots are reserved for upcoming work. Each will show the video, the sector, what was done, and who owns the footage, once it is supplied and cleared for display.</p>
   </div>
 </section>
 
@@ -520,9 +513,9 @@ const SITE_CONFIG = {
   SHOWREEL_YOUTUBE_ID: ""
 };
 
-// The six portfolio slots. Leave a field "" to keep its placeholder text.
-// Set youtube to a video ID only for work you are cleared to show publicly.
-// Never add a client name, result or statistic you cannot back up.
+// Published portfolio projects only. Add new entries here as work is completed.
+// The first project is presented as a full case study; the next two retain
+// their own playable YouTube videos in the compact project layout.
 const PROJECTS = [
   { featured:true,
     category:"Commercial Project Documentary",
@@ -533,11 +526,20 @@ const PROJECTS = [
     facts:[["Subject","Two commercial greenhouses"],["Size","16×30"],["Coverage","Full build, Part 1"]],
     ownership:"Original project commissioned by and owned by AquaHub Kenya. Displayed in this portfolio with permission.",
     youtube:"Vw7Mc0tbk2o" },
-  {category:"Corporate",               title:"", industry:"", description:"", contribution:"", youtube:""},
-  {category:"Real Estate & Property",  title:"", industry:"", description:"", contribution:"", youtube:""},
-  {category:"Promotional",             title:"", industry:"", description:"", contribution:"", youtube:""},
-  {category:"Long-form YouTube",       title:"", industry:"", description:"", contribution:"", youtube:""},
-  {category:"Corporate",               title:"", industry:"", description:"", contribution:"", youtube:""}
+  { category:"Greenhouse Project Showcase",
+    title:"How to Build an 8×30 Greenhouse for Capsicum in Kenya | Step-by-Step (Ruai)",
+    industry:"Agriculture & Greenhouse Technology",
+    description:"A step-by-step project film documenting the construction of an 8×30 greenhouse for capsicum production in Ruai, Kenya.",
+    contribution:"Filming and on-location camera work; video editing and storytelling; final video assembly and publishing.",
+    credit:"Filmed and edited by Basalt Montage.",
+    youtube:"daC_AJP9L8A" },
+  { category:"Corporate & Project Documentary",
+    title:"How We Built This Specialized Shade House and Greenhouse for ELCCON in Wundanyi + Project Launch",
+    industry:"Agriculture & Infrastructure",
+    description:"A project film covering the construction of a specialized shade house and greenhouse in Wundanyi, including the completed structures and project launch.",
+    contribution:"Video editing and storytelling; footage selection and sequencing; final video assembly.",
+    credit:"Footage filmed by others; edited by Basalt Montage.",
+    youtube:"6Ambdyv7Tfg" }
 ];
 /* ===================================================================== */
 
@@ -586,7 +588,6 @@ if(SITE_CONFIG.SHOWREEL_YOUTUBE_ID){
 
 /* ---------- portfolio ---------- */
 const grid = $('workGrid');
-const looks = [ {lx:'78%',ly:'8%',la:.17,rx:'8%'}, {lx:'22%',ly:'12%',la:.14,rx:'90%'}, {lx:'60%',ly:'0%',la:.16,rx:'20%'}, {lx:'88%',ly:'30%',la:.15,rx:'15%'}, {lx:'35%',ly:'4%',la:.15,rx:'85%'}, {lx:'70%',ly:'20%',la:.17,rx:'5%'} ];
 function caseStudy(p, n){
   const a = document.createElement('article');
   a.className = 'case featured reveal';
@@ -604,32 +605,19 @@ function caseStudy(p, n){
     '</div><div><p class="lbl">My contribution</p><ul class="contrib">' + p.contributionList.map(c => '<li>' + esc(c) + '</li>').join('') + '</ul></div></div>';
   return a;
 }
-PROJECTS.forEach((p, i) => {
+PROJECTS.filter(p => p.title && p.youtube).forEach((p, i) => {
   const n = String(i + 1).padStart(2, '0');
   if(p.featured){ grid.appendChild(caseStudy(p, n)); return; }
-  const isLive = !!p.youtube;
   const a = document.createElement('article');
   a.className = 'reveal';
-  const L = looks[i % looks.length];
-  const r = rng(101 + i * 37);
-  let strip = '';
-  const count = 7 + Math.floor(r() * 3), selAt = 1 + Math.floor(r() * (count - 2));
-  for(let k = 0; k < count; k++) strip += '<i' + (k === selAt ? ' class="sel"' : '') + ' style="--f:' + (0.6 + r() * 2.2).toFixed(2) + '"></i>';
   a.innerHTML =
-    '<div class="frame slot" style="--lx:' + L.lx + ';--ly:' + L.ly + ';--la:' + L.la + ';--rx:' + L.rx + '">' +
-      '<div class="slot-bg" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>' +
-      '<span class="brk tl"></span><span class="brk tr"></span><span class="brk bl"></span><span class="brk br"></span>' +
-      '<span class="badge">Placeholder · Project ' + n + '</span>' +
-      '<span class="slot-note">Project material<br>to be added</span>' +
-      '<span class="num" aria-hidden="true">' + n + '</span>' +
-      '<div class="strip" aria-hidden="true">' + strip + '</div>' +
-    '</div>' +
-    '<div class="meta"><span class="c">' + esc(p.category) + '</span><span class="i">' + esc(p.industry || 'Client or industry to be confirmed') + '</span></div>' +
-    '<h3' + (p.title ? '' : ' class="ph-t"') + '>' + esc(p.title || 'Project title to be added') + '</h3>' +
-    '<p>' + esc(p.description || 'A short description of the project and the story it tells will appear here.') + '</p>' +
-    '<p class="role"><b>Editing contribution:</b> ' + esc(p.contribution || 'To be confirmed with the project.') + '</p>';
+    '<div class="frame"></div>' +
+    '<div class="meta"><span class="c">' + esc(p.category) + '</span><span class="i">' + esc(p.industry) + '</span></div>' +
+    '<h3>' + esc(p.title) + '</h3>' +
+    '<p>' + esc(p.description) + '</p>' +
+    '<p class="role"><b>Contribution:</b> ' + esc(p.contribution || 'Video editing and final assembly.') + (p.credit ? '<br><span>' + esc(p.credit) + '</span>' : '') + '</p>';
   grid.appendChild(a);
-  if(isLive){ mountVideo(a.querySelector('.frame'), p.youtube, p.title || ('Project ' + n)); }
+  mountVideo(a.querySelector('.frame'), p.youtube, p.title);
 });
 
 /* ---------- timeline: waveform bars, playhead and timecode ---------- */
